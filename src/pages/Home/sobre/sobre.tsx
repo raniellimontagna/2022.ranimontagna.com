@@ -1,5 +1,4 @@
 import { ConteudoLanding } from 'components';
-import { FiDownload } from 'react-icons/fi';
 import * as styled from './sobre.styles';
 
 const Sobre = () => {
@@ -16,13 +15,6 @@ const Sobre = () => {
           </>
         }
         imagem="./static/svgs/foto.svg"
-        button={{
-          children: 'Baixar CV',
-          variant: 'outlined',
-          size: 'lg',
-          onClick: () => window.open('./curriculo.pdf', '_blank'),
-          startIcon: <FiDownload />,
-        }}
       />
     </styled.Sobre>
   );
