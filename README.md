@@ -2,7 +2,7 @@
 
 # 2022.ranimontagna.com
 
-**My personal site in 2022: a one-page React app with a typewriter hero, an about section with my CV, study and work timelines and contact cards. It was ranimontagna.com before [2024.ranimontagna.com](https://github.com/RanielliMontagna/2024.ranimontagna.com) replaced it.**
+**My personal site in 2022: a one-page React app with a typewriter hero, an about section, study and work timelines and contact cards. It was ranimontagna.com before [2024.ranimontagna.com](https://github.com/RanielliMontagna/2024.ranimontagna.com) replaced it.**
 
 ![Status](https://img.shields.io/badge/status-archived-6e7781?style=for-the-badge)
 ![React](https://img.shields.io/badge/React_17-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -33,7 +33,7 @@ I built this site between April and August 2022, while I worked as a front-end d
 
 - **Title bar** with links (Início, Sobre, Contato) that scroll smoothly with react-scroll and highlight the section on screen.
 - **Hero** with three typewriter lines.
-- **About me** with my photo and a "Baixar CV" button for `public/curriculo.pdf`.
+- **About me** with my photo. A "Baixar CV" button opened my CV until October 2026, when the CV came out because it had my phone number.
 - **Skills**, then **studies** and **experience** as vertical timelines.
 - **Contact** cards for e-mail and LinkedIn, and a footer with social links. A WhatsApp card with my number was removed in October 2026.
 - Reveal animations with AOS.
@@ -60,7 +60,7 @@ Taken in October 2026 from a local production build. The styles ask for the Qane
 ## Project layout
 
 ```text
-public/                 # index.html with SEO and Open Graph tags, web manifest, icons and CV
+public/                 # index.html with SEO and Open Graph tags, web manifest and icons
 src/
 ├── pages/Home/         # titleBar, intro, sobre, habilidades, estudos, experiencia, contato, footer
 ├── components/         # typography, button, divider, menu, modal, loading, typewriter, page header, layout
@@ -101,12 +101,12 @@ There are no tests. Use Yarn: `bun.lockb` comes from a July 2022 experiment and 
 ## Project history
 
 - **April 2022**: project created with the home, about, skills, contact and experience sections, then colors adjusted for contrast.
-- **May 2022**: CV download, smooth scrolling with the current section highlighted, accessibility labels, a robots meta tag and my photo.
+- **May 2022**: CV download (removed in 2026), smooth scrolling with the current section highlighted, accessibility labels, a robots meta tag and my photo.
 - **June 2022**: installable PWA with a web manifest and a Workbox service worker.
 - **July 2022**: reveal animations with AOS and a Bun lockfile.
 - **August 2022**: new experience entry. Last commit on 13 August 2022.
 - **September 2022**: the next version of the site, now 2024.ranimontagna.com, started.
-- **October 2026**: the unused `rm-design-system` dependency, no longer on npm, was removed so the install works again; the WhatsApp card came out; the site went back online on GitHub Pages at 2022.ranimontagna.com; the repository was renamed from `rani-website` and archived.
+- **October 2026**: the unused `rm-design-system` dependency, no longer on npm, was removed so the install works again; the WhatsApp card and the CV came out; the site went back online on GitHub Pages at 2022.ranimontagna.com; the repository was renamed from `rani-website` and archived.
 
 ## Author
 
