@@ -1,8 +1,8 @@
 <div align="center">
 
-# rani-website
+# 2022.ranimontagna.com
 
-**My personal site in 2022: a one-page React app with a typewriter hero, an about section with my CV, study and work timelines and contact cards. It was ranimontagna.com before [nextlp](https://github.com/RanielliMontagna/nextlp) replaced it.**
+**My personal site in 2022: a one-page React app with a typewriter hero, an about section with my CV, study and work timelines and contact cards. It was ranimontagna.com before [2024.ranimontagna.com](https://github.com/RanielliMontagna/2024.ranimontagna.com) replaced it.**
 
 ![Status](https://img.shields.io/badge/status-archived-6e7781?style=for-the-badge)
 ![React](https://img.shields.io/badge/React_17-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -11,6 +11,7 @@
 ![MUI](https://img.shields.io/badge/MUI_5-007FFF?style=for-the-badge&logo=mui&logoColor=white)
 ![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
 
+[**Live site**](https://2022.ranimontagna.com/) •
 [Features](#features) •
 [Screenshots](#screenshots) •
 [Project layout](#project-layout) •
@@ -20,13 +21,13 @@
 </div>
 
 > [!WARNING]
-> **Discontinued.** rani-website is no longer maintained and this repository is archived as a portfolio reference. It is offline: ranimontagna.com now serves my current site, and its successor, nextlp, lives on at [old.ranimontagna.com](https://old.ranimontagna.com/).
+> **Discontinued.** This site is no longer maintained and this repository is archived as a portfolio reference. A copy is back online at [2022.ranimontagna.com](https://2022.ranimontagna.com/) on GitHub Pages. ranimontagna.com now serves my current site, and the next version of this one is at [2024.ranimontagna.com](https://2024.ranimontagna.com/).
 
-![rani-website hero](docs/screenshots/hero.png)
+![Hero](docs/screenshots/hero.png)
 
 ## About
 
-I built this site between April and August 2022, while I worked as a front-end developer at SB Sistemas and studied Systems Analysis and Development at UPF. It is a single page in Portuguese, made with Create React App and TypeScript, and it also works as an installable PWA. Its successor, nextlp, started in September 2022.
+I built this site between April and August 2022, while I worked as a front-end developer at SB Sistemas and studied Systems Analysis and Development at UPF. It is a single page in Portuguese, made with Create React App and TypeScript, and it also works as an installable PWA. Its successor started in September 2022. This repository was called `rani-website` until October 2026.
 
 ## Features
 
@@ -34,14 +35,14 @@ I built this site between April and August 2022, while I worked as a front-end d
 - **Hero** with three typewriter lines.
 - **About me** with my photo and a "Baixar CV" button for `public/curriculo.pdf`.
 - **Skills**, then **studies** and **experience** as vertical timelines.
-- **Contact** cards for e-mail, WhatsApp and LinkedIn, and a footer with social links.
+- **Contact** cards for e-mail and LinkedIn, and a footer with social links. A WhatsApp card with my number was removed in October 2026.
 - Reveal animations with AOS.
 - **PWA**: web manifest and a Workbox service worker that precaches the build.
 - Sentry error tracking in production builds.
 
 ## Screenshots
 
-Taken in October 2026 from a local production build. The styles ask for the Qanelas Soft font but never load it, so visitors saw their browser's default sans-serif; these screenshots use Inter. The WhatsApp number is hidden.
+Taken in October 2026 from a local production build. The styles ask for the Qanelas Soft font but never load it, so visitors saw their browser's default sans-serif; these screenshots use Inter.
 
 <table>
   <tr>
@@ -84,14 +85,16 @@ src/
 Last checked in October 2026. Create React App 4 needs Node.js 16: on Node.js 24 the build stops inside PostCSS with `ERR_PACKAGE_PATH_NOT_EXPORTED`, even with the legacy OpenSSL provider.
 
 ```bash
-git clone https://github.com/RanielliMontagna/rani-website.git
-cd rani-website
+git clone https://github.com/RanielliMontagna/2022.ranimontagna.com.git
+cd 2022.ranimontagna.com
 nvm use 16    # or: fnm use 16
 npx yarn@1 install --frozen-lockfile --ignore-engines
 
 npx yarn@1 start   # http://localhost:3000
 npx yarn@1 build
 ```
+
+The GitHub Pages copy is built with `REACT_APP_ENV=development npx yarn@1 build`, which leaves Sentry off, and published from the `gh-pages` branch with a `CNAME` file.
 
 There are no tests. Use Yarn: `bun.lockb` comes from a July 2022 experiment and still lists a dependency that is no longer on npm.
 
@@ -102,8 +105,8 @@ There are no tests. Use Yarn: `bun.lockb` comes from a July 2022 experiment and 
 - **June 2022**: installable PWA with a web manifest and a Workbox service worker.
 - **July 2022**: reveal animations with AOS and a Bun lockfile.
 - **August 2022**: new experience entry. Last commit on 13 August 2022.
-- **September 2022**: nextlp, the next version of the site, started.
-- **October 2026**: archived. The unused `rm-design-system` dependency, no longer on npm, was removed so the install works again.
+- **September 2022**: the next version of the site, now 2024.ranimontagna.com, started.
+- **October 2026**: the unused `rm-design-system` dependency, no longer on npm, was removed so the install works again; the WhatsApp card came out; the site went back online on GitHub Pages at 2022.ranimontagna.com; the repository was renamed from `rani-website` and archived.
 
 ## Author
 
